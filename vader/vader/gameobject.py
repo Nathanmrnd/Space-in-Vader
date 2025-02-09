@@ -10,10 +10,10 @@ class GameObject:
         self.column-=1
 
     def move_down(self):
-        self.line+=4
+        self.line+=2
 
     def move_up(self):
-        self.line-=4
+        self.line-=2
 
     def is_on_the_right_edge(self):
         if self.column > 96 :

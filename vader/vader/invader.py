@@ -1,5 +1,6 @@
 import pygame
 import random
+import time 
 
 from .gameobject import GameObject
 from .laser import Laser
