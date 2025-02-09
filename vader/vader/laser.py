@@ -19,4 +19,8 @@ class Laser(GameObject):
         if self.direction == 'DOWN':
             self.move_down()
 
+    def delete_outranged(self,lasers):
+        if self.is_on_the_up_edge() or self.is_on_the_down_edge():
+            lasers.remove(self)
+
 
