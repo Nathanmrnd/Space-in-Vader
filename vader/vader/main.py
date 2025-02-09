@@ -1,6 +1,6 @@
 from .board import Board
 from .invader import Invader
-from .laser import Laser
+
 from .starship import Starship
 
 import pygame
