@@ -14,7 +14,6 @@ class Laser(GameObject):
         # Calculate the position of the laser
         loc_x = self._column * w / 100
         loc_y = self._line * w / 100 + w / 10
-        
         # Create a rectangle for the laser
         rect = pygame.Rect(loc_x, loc_y, 2, w / 50)
         # Draw the laser on the screen

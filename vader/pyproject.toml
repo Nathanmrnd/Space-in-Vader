@@ -15,6 +15,7 @@ pytest = "^8.3.4"
 mypy = "^1.14.1"
 ruff = "^0.9.4"
 coverage = "^7.6.11"
+pytest-cov = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
