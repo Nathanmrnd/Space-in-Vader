@@ -1,11 +1,11 @@
-from .board import Board
-from .invader import Invader
-from .game import Game
-from .starship import Starship
-from .laser import Laser  # Import Laser class for type hinting
+import argparse
 
 import pygame
-import argparse
+
+from .board import Board
+from .game import Game
+from .invader import Invader
+from .starship import Starship
 
 # Default screen dimensions
 W_DEFAULT = 300
@@ -14,9 +14,9 @@ MIN_SIZE = 100
 
 def argue() -> argparse.Namespace:
     # Let the user choose the size of the game screen
-    parser = argparse.ArgumentParser(description='Choose the width and height of the game window.')
-    parser.add_argument('-L', type=int, help="Width", default=W_DEFAULT)
-    parser.add_argument('-l', type=int, help="Height", default=H_DEFAULT)
+    parser = argparse.ArgumentParser(description="Choose the width and height of the game window.")
+    parser.add_argument("-L", type=int, help="Width", default=W_DEFAULT)
+    parser.add_argument("-l", type=int, help="Height", default=H_DEFAULT)
     args = parser.parse_args()
 
     # Check argument
